@@ -1,17 +1,20 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { PipesRoutingModule } from './pipes-routing.module';
-import { PipesComponent } from './pipes.component';
+import {PipesRoutingModule} from './pipes-routing.module';
+import {PipesComponent} from './pipes.component';
+import {UsdInrPipe} from "../../pipes/usd-inr.pipe";
 
 
 @NgModule({
   declarations: [
-    PipesComponent
+    PipesComponent,
+    UsdInrPipe
   ],
   imports: [
     CommonModule,
-    PipesRoutingModule
+    PipesRoutingModule,
   ]
 })
-export class PipesModule { }
+export class PipesModule {
+}
